@@ -1,9 +1,22 @@
+.bi-moon-fill{
+    margin-left: 25px;
+}
+.bi-brightness-high-fill{
+    margin-left: 10px;
+}
+
 body{
 display: block;
 padding-top: 50px;
-height: 1vh;
+height: 100vh;
+width: 100vw;
 }
-.box
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
 .container{
     
     display: block;
@@ -18,7 +31,7 @@ height: 1vh;
     width: 75px;
     height: 37px;
     border-radius: 75px;
-    background-color: gray;
+    background-color: black;
     cursor: pointer;
     position: relative;
     
@@ -27,9 +40,9 @@ height: 1vh;
     display: flex;
     position: absolute;
 content: "";
-background-color: white;
-width: 28px;
-height: 28px;
+background-color:gold;
+width: 30px;
+height: 30px;
 border-radius: 30px;  
 margin: 5px;
 transition: 0.5s;
@@ -38,12 +51,12 @@ input{
     display: none;
 }
 input:checked+ .toggle{
-    background-color:red;
+    background-color:gray;
+    
 }
 
 input:checked+ .toggle::before{
-    transform: translateX(34px);
-    
+    transform: translateX(34px);    
 }
 .intro{
     margin-top: 20px;
@@ -71,16 +84,12 @@ input:checked+ .toggle::before{
 
 .main{
     display: flex;
-    
-    justify-content: center;
+    justify-content:center ;
     flex-direction: row;
     align-items: center;
 }
 
 @media (max-width:768px) {
-    body{
-        background-color: peachpuff;
-    }
     .container{
        display: block;
     }
